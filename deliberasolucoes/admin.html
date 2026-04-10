@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Admin - Delibera SoluÃ§Ãµes</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="admin-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo.png" alt="Delibera SoluÃ§Ãµes Logo">
+        <h1 class="sitename">Delibera</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="admin.html" class="active">Dashboard</a></li>
+          <li><a href="#">Processos</a></li>
+          <li><a href="#">Clientes</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="cta-btn" href="index.html">Sair</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
+      <div class="container position-relative">
+        <h1>Painel Administrativo</h1>
+        <p>VisÃ£o geral dos processos e atividades da Delibera SoluÃ§Ãµes.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">InÃ­cio</a></li>
+            <li class="current">Admin</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Admin Section -->
+    <section id="admin-section" class="admin-section section">
+
+      <div class="container" data-aos="fade-up">
+
+        <!-- Dashboard Cards -->
+        <div class="row mb-4">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card text-white bg-primary h-100">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="bi bi-folder2-open fs-1"></i>
+                  <div class="text-end">
+                    <h3 class="card-title">125</h3>
+                    <p class="card-text mb-0">Total de Processos</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card text-white bg-success h-100">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="bi bi-check2-circle fs-1"></i>
+                  <div class="text-end">
+                    <h3 class="card-title">82</h3>
+                    <p class="card-text mb-0">Processos Deferidos</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card text-white bg-warning h-100">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="bi bi-hourglass-split fs-1"></i>
+                  <div class="text-end">
+                    <h3 class="card-title">43</h3>
+                    <p class="card-text mb-0">Processos em Andamento</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Process List Table -->
+        <div class="card">
+          <div class="card-header">
+            <h4>Lista de Processos Recentes</h4>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#ID</th>
+                    <th scope="col">Cliente</th>
+                    <th scope="col">ServiÃ§o</th>
+                    <th scope="col">Link do Processo</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">10521</th>
+                    <td>JoÃ£o da Silva</td>
+                    <td>Limpa Nome</td>
+                    <td><a href="#" target="_blank">Ver Processo</a></td>
+                    <td><span class="badge bg-success">Deferido</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10522</th>
+                    <td>Maria Oliveira</td>
+                    <td>Aumento de Rating</td>
+                    <td><a href="#" target="_blank">Ver Processo</a></td>
+                    <td><span class="badge bg-warning text-dark">Em Andamento</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10523</th>
+                    <td>Carlos Pereira</td>
+                    <td>RegularizaÃ§Ã£o BACEN</td>
+                    <td><a href="#" target="_blank">Ver Processo</a></td>
+                    <td><span class="badge bg-success">Deferido</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10524</th>
+                    <td>Ana Costa</td>
+                    <td>RemoÃ§Ã£o de Links</td>
+                    <td><a href="#" target="_blank">Ver Processo</a></td>
+                    <td><span class="badge bg-danger">Indeferido</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10525</th>
+                    <td>Empresa XYZ Ltda.</td>
+                    <td>Google Positivo</td>
+                    <td><a href="#" target="_blank">Ver Processo</a></td>
+                    <td><span class="badge bg-warning text-dark">Em Andamento</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Admin Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container copyright text-center mt-4">
+      <p>Â© <span>Copyright</span> <strong class="px-1 sitename">Delibera</strong> <span>Todos os Direitos Reservados</span></p>
+      <div class="credits">
+        Desenvolvido por <a href="https://rcube.com.br">RCube</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
